@@ -80,7 +80,7 @@ const CropImage = () => {
   };
 
   return (
-    <div className="p-5">
+    <div>
       {steps === "step-1" && (
         <label
           htmlFor="imageFile"
