@@ -80,11 +80,11 @@ const CropImage = () => {
   };
 
   return (
-    <div className="">
+    <div className="p-5">
       {steps === "step-1" && (
         <label
           htmlFor="imageFile"
-          className="relative w-96 h-96 flex justify-center items-center bg-[#FFFDF2] border-dashed border-2 border-gray-300 text-black rounded-3xl cursor-pointer hover:bg-[#FFFDF2]/80 hover:border-opacity-60 transition"
+          className="relative md:w-96 md:h-96  w-72 h-72 flex justify-center items-center bg-[#FFFDF2] border-dashed border-2 border-gray-300 text-black rounded-3xl cursor-pointer hover:bg-[#FFFDF2]/80 hover:border-opacity-60 transition"
         >
           <input
             type="file"
@@ -97,7 +97,7 @@ const CropImage = () => {
       )}
 
       {steps === "step-2" && (
-        <div className="relative w-96 h-96 flex justify-center items-center bg-[#FFFDF2] border-dashed border-2 border-gray-300 text-black rounded-3xl cursor-pointer hover:bg-[#FFFDF2]/80 hover:border-opacity-60 transition">
+        <div className="relative w-96 h-96 md:w-96 md:h-96 flex justify-center items-center bg-[#FFFDF2] border-dashed border-2 border-gray-300 text-black rounded-3xl cursor-pointer hover:bg-[#FFFDF2]/80 hover:border-opacity-60 transition">
           <Image
             src={imageURL}
             width={100}
@@ -116,7 +116,7 @@ const CropImage = () => {
       )}
 
       {steps === "step-3" && (
-        <div className="relative w-96 h-96 flex justify-center items-center bg-[#FFFDF2] border-dashed border-2 border-gray-300 text-black rounded-3xl cursor-pointer hover:bg-[#FFFDF2]/80 hover:border-opacity-60 transition">
+        <div className="relative md:w-96 md:h-96  w-72 h-72 flex justify-center items-center bg-[#FFFDF2] border-dashed border-2 border-gray-300 text-black rounded-3xl cursor-pointer hover:bg-[#FFFDF2]/80 hover:border-opacity-60 transition">
           <Cropper
             className="rounded-3xl"
             src={imageURL}
