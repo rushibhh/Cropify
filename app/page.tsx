@@ -1,4 +1,4 @@
-import CropImage from "./crop-image/page";
+import CropImage from "../components/crop-image/crop-image";
 
 export default function Home() {
   return (
